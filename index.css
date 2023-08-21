@@ -20,20 +20,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 4px 0px #000000;
+  box-shadow: 0px 2px 2px 0px #000000;
   position: sticky;
   top: 0;
   background-color: #ffff;
-  animation: fallFromAbove 1s ease-in-out forwards;
+  animation: fallFromAbove 0.7s ease-in-out forwards;
 }
 
 nav ul {
   display: flex;
   list-style: none;
   gap: 3.5em;
+  
 }
 nav ul li{
   transition: transform 0.5s ease;
+  
 }
 nav ul li a {
   text-decoration: none;
@@ -66,21 +68,12 @@ nav ul li a {
   animation: fallFromAbove 1s ease-in-out forwards;
 }
 
-@keyframes fallFromAbove {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .textsLeft h2 {
   font-size: 60px;
   font-weight: bold;
-  animation: fallFromAbove 1s ease-in-out forwards;
+  animation: fallFromAbove 1.2s ease-in-out forwards;
+  transition: transform 0.3s ease-in-out;
 
 }
 
@@ -93,8 +86,10 @@ nav ul li a {
 }
 
 .textRight p{
-  animation: fallFromAbove 1s ease-in-out forwards;
+  animation: fallFromAbove 1.3s ease-in-out forwards;
+ 
 }
+
 
 .flexLineText {
   display: flex;
@@ -118,7 +113,7 @@ span {
   display: flex;
   justify-content: flex-end;
   margin-right: 3%;
-  animation: fallFromAbove 1s ease-in-out forwards;
+  animation: fallFromAbove 1.4s ease-in-out forwards;
 }
 
 
@@ -137,3 +132,22 @@ nav ul li a:hover{
   
 
 }
+
+.textsLeft h2:hover{
+  color: #1d2b4f;
+  
+
+}
+
+
+@keyframes fallFromAbove {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
