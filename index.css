@@ -7,7 +7,11 @@
   font-family: "Anton", sans-serif;
   font-family: "Manrope", sans-serif;
   font-family: "Roboto", sans-serif;
+  
 }
+
+
+
 body {
   background-color: #f9f9f9;
 }
@@ -20,6 +24,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #ffff;
+  animation: fallFromAbove 1s ease-in-out forwards;
 }
 
 nav ul {
@@ -27,7 +32,9 @@ nav ul {
   list-style: none;
   gap: 3.5em;
 }
-
+nav ul li{
+  transition: transform 0.5s ease;
+}
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -56,11 +63,25 @@ nav ul li a {
 }
 .textsLeft p {
   font-size: 13px;
+  animation: fallFromAbove 1s ease-in-out forwards;
+}
+
+@keyframes fallFromAbove {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .textsLeft h2 {
   font-size: 60px;
   font-weight: bold;
+  animation: fallFromAbove 1s ease-in-out forwards;
+
 }
 
 .textRight {
@@ -68,6 +89,11 @@ nav ul li a {
   flex-direction: column;
   gap: 1em;
   margin-top: 2%;
+
+}
+
+.textRight p{
+  animation: fallFromAbove 1s ease-in-out forwards;
 }
 
 .flexLineText {
@@ -92,5 +118,22 @@ span {
   display: flex;
   justify-content: flex-end;
   margin-right: 3%;
+  animation: fallFromAbove 1s ease-in-out forwards;
 }
 
+
+
+nav ul li:hover{
+  transform: translate(10px,-10px);
+  -webkit-transform: translate(10px,-10px);
+  -moz-transform: translate(10px,-10px);
+  color: #1d2b4f;
+  box-shadow: 0px 2px 5px rgba(60, 60, 60, 0.1);
+
+}
+
+nav ul li a:hover{
+  color: #1d2b4f;
+  
+
+}
