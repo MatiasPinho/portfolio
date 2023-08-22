@@ -1,0 +1,19 @@
+{
+  "nav": [
+    { "text": "Es", "class": "languaje" },
+    { "text": "Acerca de", "class": "active" },
+    { "text": "Proyectos" },
+    { "text": "Contacto" }
+  ],
+  "texts": {
+    "greeting": "Hola, soy",
+    "jobTitle": "Desarrollador Web",
+    "about": "Como desarrollador me gustaría crear productos digitales inclusivos y accesibles en el ámbito de start-ups y proyectos emprendedores. Mi objetivo es utilizar el diseño para mejorar la interacción humana con tecnología escalable."
+  },
+  "socials": [
+    { "text": "Linkedin", "href": "#" },
+    { "text": "Curriculum", "href": "#" },
+    { "text": "Github", "href": "#" }
+  ]
+}
+

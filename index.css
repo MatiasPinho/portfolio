@@ -7,10 +7,7 @@
   font-family: "Anton", sans-serif;
   font-family: "Manrope", sans-serif;
   font-family: "Roboto", sans-serif;
-  
 }
-
-
 
 body {
   background-color: #f9f9f9;
@@ -31,11 +28,9 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 3.5em;
-  
 }
-nav ul li{
+nav ul li {
   transition: transform 0.5s ease;
-  
 }
 nav ul li a {
   text-decoration: none;
@@ -43,6 +38,7 @@ nav ul li a {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 13px;
+  padding-bottom: 1em;
 }
 
 .active {
@@ -68,13 +64,11 @@ nav ul li a {
   animation: fallFromAbove 1s ease-in-out forwards;
 }
 
-
 .textsLeft h2 {
   font-size: 60px;
   font-weight: bold;
   animation: fallFromAbove 1.2s ease-in-out forwards;
   transition: transform 0.3s ease-in-out;
-
 }
 
 .textRight {
@@ -82,14 +76,14 @@ nav ul li a {
   flex-direction: column;
   gap: 1em;
   margin-top: 2%;
-
+  animation: typing 3s steps(40, end), appear 0.5s;
 }
 
-.textRight p{
+.textRight p {
   animation: fallFromAbove 1.3s ease-in-out forwards;
- 
+  letter-spacing: 1px;
+  margin-top: 5%;
 }
-
 
 .flexLineText {
   display: flex;
@@ -116,29 +110,21 @@ span {
   animation: fallFromAbove 1.4s ease-in-out forwards;
 }
 
-
-
-nav ul li:hover{
-  transform: translate(10px,-10px);
-  -webkit-transform: translate(10px,-10px);
-  -moz-transform: translate(10px,-10px);
+nav ul li:hover {
+  transform: translate(10px, -10px);
+  -webkit-transform: translate(10px, -10px);
+  -moz-transform: translate(10px, -10px);
   color: #1d2b4f;
   box-shadow: 0px 2px 5px rgba(60, 60, 60, 0.1);
-
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #1d2b4f;
-  
-
 }
 
-.textsLeft h2:hover{
+.textsLeft h2:hover {
   color: #1d2b4f;
-  
-
 }
-
 
 @keyframes fallFromAbove {
   0% {
@@ -149,5 +135,52 @@ nav ul li a:hover{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.arrow svg {
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow svg:hover {
+  transform: translateY(50%);
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid #000000;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: transform 0.5s ease-in-out;
+  animation: fallFromAbove 1.6s ease-in-out forwards;
+}
+
+.socials a:hover {
+  color: #1d2b4f;
+  font-weight: bold;
+}
+
+.language {
+  position: absolute;
+  left: 0;
+  margin-left: 5%;
+  font-family: "Anton", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.language:hover {
+  transform: none;
+  border-bottom: 2px solid #000000;
+  color: #1d2b4f;
+  font-weight: bold;
 }
 
