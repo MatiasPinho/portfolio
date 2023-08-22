@@ -6,11 +6,11 @@ languageElement.addEventListener("click", () => {
 
   switch (currentLanguage) {
     case "En":
-      languageElement.textContent = 'Es';
+      languageElement.innerHTML = '<a href="#">Es</a>';
       languageElement.parentElement.setAttribute("data-language", "es");
       break;
     case "Es":
-      languageElement.textContent = 'En';
+      languageElement.innerHTML = '<a href="#">En</a>';
       languageElement.parentElement.setAttribute("data-language", "en");
       break;    
     default:
