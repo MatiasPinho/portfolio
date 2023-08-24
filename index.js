@@ -1,4 +1,3 @@
-
 const languageElement = document.querySelector(".language");
 
 languageElement.addEventListener("click", () => {

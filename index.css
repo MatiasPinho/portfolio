@@ -11,6 +11,7 @@
 
 body {
   background-color: #f9f9f9;
+  overflow: hidden;
 }
 header {
   height: 14vh;
@@ -18,8 +19,8 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 2px 0px #000000;
-  position: sticky;
-  top: 0;
+  position: relative;
+  z-index: 2;
   background-color: #ffff;
   animation: fallFromAbove 0.7s ease-in-out forwards;
 }
@@ -52,7 +53,7 @@ nav ul li a {
   gap: 4em;
   margin-left: 19%;
   margin-right: 19%;
-  margin-top: 3%;
+  margin-top: 4%;
 }
 
 .textsLeft {
@@ -103,7 +104,6 @@ span {
 }
 
 .arrow {
-  position: sticky;
   display: flex;
   justify-content: flex-end;
   margin-right: 3%;
@@ -150,17 +150,18 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 3em;
 }
 
 .socials a {
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2.7px solid #000000;
   font-size: 13px;
   letter-spacing: 1px;
   transition: transform 0.5s ease-in-out;
   animation: fallFromAbove 1.6s ease-in-out forwards;
+  color: #363636;
 }
 
 .socials a:hover {
@@ -184,3 +185,74 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
+.sectionContainer {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.container1 {
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.container2 {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.imageAndText {
+  display: flex;
+  margin-top: 3%;
+  align-items: center;
+  margin-left: 19%;
+  margin-right: 19%;
+  gap: 1rem;
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+  display: flex;
+}
+
+.about hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.lineAndText {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  align-items: center;
+  gap: 1em;
+}
+
+.lineAndText h2 {
+  
+}
+
+.imageAndText p {
+  letter-spacing: 1px;
+}
+
+.textInferior {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}

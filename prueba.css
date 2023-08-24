@@ -1,0 +1,30 @@
+
+
+
+.escaleraPadre{
+    height: 100vh;
+   
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.linea-vertical{
+    width: 38px;
+    height: 5px;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.linea-horizontal{
+    width: 38px;
+    height: 5px;
+    position: relative;
+    bottom: 16.5px;
+    left: 19px;
+    transform: rotate(90deg);
+    background-color: black;
+}
